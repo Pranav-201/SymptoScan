@@ -1,0 +1,130 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('SL-040820-29750-27.jpg') no-repeat center center/cover;
+    height: 100vh; 
+    position: relative;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.167); 
+    z-index: -1; 
+}
+
+
+main, header {
+    position: relative;
+    color: white; 
+    z-index: 1;
+}
+
+
+
+.navbar {
+   background: rgba(167, 211, 220, 0.381);
+    color: rgb(0, 0, 0);
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: 700;
+}
+.che{
+    color: rgb(9, 94, 130);
+}
+a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    margin-top: 700px;
+    margin: 7px;
+    margin-right: 10px;
+    margin-top: -500px;
+    
+  }
+  a:hover{
+    color: rgba(26, 154, 154, 0.868);
+  }
+.nav-links a{
+    margin-left: 29px;
+   
+    
+}
+
+main {
+    margin: 50px auto;
+    width: 60%;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+}
+main:hover{
+    background: rgba(227, 244, 247, 0.523);
+}
+
+.search-container {
+    margin-top: 20px;
+    height: 170px;
+    
+}
+ 
+
+input {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #445362;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 40px;
+}
+input:hover{
+    background: rgba(101, 120, 127, 0.091);
+}
+
+button {
+    padding: 10px 15px;
+    background: #122a42cf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #022045;
+}
+
+#result {
+    margin-top: 3px;
+    padding: 15px;
+    background: #1a6f898e;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 20px;
+    width: 500px;
+    transition: 300ms;
+}
+
+#result:hover{
+   background: #000000d2;
+
+
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile_style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>User Profile</h2>
+        <form id="profileForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter your age" required>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter your weight" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" placeholder="Enter your address" required></textarea>
+
+            <label for="mobile">Mobile No.:</label>
+            <input type="tel" id="mobile" placeholder="Enter your mobile number" required>
+
+            <label for="disease">Previous Disease:</label>
+            <input type="text" id="disease" placeholder="Enter previous disease (if any)">
+
+            <label for="extra">Additional Info:</label>
+            <textarea id="extra" placeholder="Enter extra details"></textarea>
+
+            <button type="button" onclick="generatePDF()">Download Report</button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>

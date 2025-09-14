@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SymptoCheck - Disease Detection</title>
+    <link rel="stylesheet" href="main.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Sympto<for class="che">Scan</for></div>
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="profile.html">Profile</a>
+                <a href="#footer">Contact</a>
+                <a href="#" id="main-but">About us</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input type="text" id="symptomInput" placeholder="Enter symptoms (e.g., fever, headache)">
+            <button onclick="checkDisease()">Check Disease</button>
+        </div>
+
+        <div id="result">
+            <h2>Possible Disease:</h2>
+            <p id="diseaseName">Enter symptoms to see results</p>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <!-- Footer content here -->
+    </footer>
+</body>
+</html>
